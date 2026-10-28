@@ -1,6 +1,6 @@
 # SOREN — Motion Exhibits v7
 
-The latest résumé copy: six independent silent motion films on the curved WebGL ribbon, with mobile posters and reduced-motion fallbacks. The About, Experience, Education and Projects films use Remotion and Three.js; Skills and Contact retain their distinct HyperFrames designs.
+The preserved v7 résumé copy (the current app is in `../soren-motion-v8/`): six independent silent motion films on the curved WebGL ribbon, with mobile posters and reduced-motion fallbacks. The About, Experience, Education and Projects films use Remotion and Three.js; Skills and Contact retain their distinct HyperFrames designs.
 
 ## Open
 
