@@ -1,0 +1,22 @@
+/* Biomechanical Cybernetic Lab — Design Tokens */
+/* Directions: modern-minimal & tech-utility posture */
+
+:root {
+  --bg: oklch(14% 0.01 250);
+  --surface: oklch(18% 0.015 250);
+  --surface-raised: oklch(22% 0.02 245);
+  --surface-glass: rgba(18, 22, 28, 0.72);
+  --fg: oklch(98% 0.005 240);
+  --muted: oklch(62% 0.015 240);
+  --border: oklch(28% 0.012 250);
+  --border-hairline: rgba(255, 255, 255, 0.08);
+  --accent: oklch(75% 0.18 190);
+  --accent-glow: rgba(56, 189, 248, 0.25);
+  --telemetry-amber: oklch(78% 0.16 70);
+  --telemetry-cyan: oklch(75% 0.18 190);
+  --telemetry-grid: rgba(255, 255, 255, 0.04);
+
+  --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+}
