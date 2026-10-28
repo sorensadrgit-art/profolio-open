@@ -18,4 +18,4 @@ node --test examples/soren-motion-v4/reference-motion.test.mjs
 
 The original local acceptance run passed five mathematical tests, 22 browser checks and a native pointer drag check. See `verification.json` for measured wheel-trajectory comparisons and scope limits. Physical-device GPU performance and exact frame parity across devices remain unverified.
 
-This directory is an independent portfolio example. It contains no participant recordings, calibration captures, downloaded models, credentials or service configuration. The repository's motion-capture application is unaffected.
+This directory is an independent portfolio example. It contains no participant recordings, calibration captures, downloaded models, credentials or service configuration. The current editable portfolio is in `../soren-motion-v8/`.

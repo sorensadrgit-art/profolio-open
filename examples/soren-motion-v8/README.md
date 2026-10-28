@@ -1,6 +1,6 @@
 # SOREN — Section Explorers v8
 
-An editable React résumé with six distinct interactive section experiences. The v7 films and measured ribbon controller are retained. The KineLab application at the repository root is separate.
+An editable React résumé with six distinct interactive section experiences. The v7 films and measured ribbon controller are retained. Canonical repository: https://github.com/sorensadrgit-art/profolio-open. The KineLab application is maintained separately in `sorensadrgit-art/phnoe-web-app`.
 
 ## Run
 
