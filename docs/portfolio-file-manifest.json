@@ -6,14 +6,14 @@
   "files": [
     {
       "path": ".gitattributes",
-      "source_sha256": "cc2c0f3f67f5cb2fa0fcd949c0daa3175d6b7469d39d49053aaca9e029dfd933",
-      "destination_sha256": "cc2c0f3f67f5cb2fa0fcd949c0daa3175d6b7469d39d49053aaca9e029dfd933",
+      "source_sha256": "915bcc0f00f028867ebb9e7f7c04b59b2ca70c316601ae04bf11a093697d63aa",
+      "destination_sha256": "915bcc0f00f028867ebb9e7f7c04b59b2ca70c316601ae04bf11a093697d63aa",
       "unchanged": true
     },
     {
       "path": "artifacts/SOREN-Section-Explorers-v8-Cybernetic.sha256",
-      "source_sha256": "37c2604b7f113a40ecc5bbbf86c67317b7d1c2208dfd0cda56e8fd11a44d198d",
-      "destination_sha256": "7870488f994feccc15bf63d3e6e42efe17a00f242af3499d56adb540ea2c76be",
+      "source_sha256": "52b4ed2f0e776056ae12209294c7f16d5717006cace632a3447c8557563ebeb4",
+      "destination_sha256": "90856839b26748e160bbd880030d3239815554ba369bae784ca8e94b2a167535",
       "unchanged": false
     },
     {
@@ -78,14 +78,14 @@
     },
     {
       "path": "examples/soren-motion-v4/.gitattributes",
-      "source_sha256": "669e3c3754f61a96a017bca84af4a2d28faffbdec868354196f69804b4f3f8e4",
-      "destination_sha256": "669e3c3754f61a96a017bca84af4a2d28faffbdec868354196f69804b4f3f8e4",
+      "source_sha256": "0f1da45c024906b24913af069e2f2d7755170eca7e7d932f4409d83e0833998b",
+      "destination_sha256": "0f1da45c024906b24913af069e2f2d7755170eca7e7d932f4409d83e0833998b",
       "unchanged": true
     },
     {
       "path": "examples/soren-motion-v4/README.md",
       "source_sha256": "63366d7821865be507da53fd7a391293b4970cf4794bab0f86e5a05bee8ca968",
-      "destination_sha256": "840c2458faf7131006d1d4afe097e61babff7d203f9e8c6eab473f99c56eb0bc",
+      "destination_sha256": "ee4f576a5551015a1154f97f180bfd8c854cc172859abc9183a7c468f00aa0a4",
       "unchanged": false
     },
     {
@@ -114,20 +114,20 @@
     },
     {
       "path": "examples/soren-motion-v7/.gitattributes",
-      "source_sha256": "f11d997acd6276dbbb269025977927acb58295dbe293a9bf47d8866fd83ece30",
-      "destination_sha256": "f11d997acd6276dbbb269025977927acb58295dbe293a9bf47d8866fd83ece30",
+      "source_sha256": "413c8cce399b5b141d64199faeb3ff45eb7c97dc165dc59a04437dc3cd9702fc",
+      "destination_sha256": "413c8cce399b5b141d64199faeb3ff45eb7c97dc165dc59a04437dc3cd9702fc",
       "unchanged": true
     },
     {
       "path": "examples/soren-motion-v7/.gitignore",
-      "source_sha256": "b12f09897e00fb83b321aba9b320a83c5e85c1f91e780eb204c7a160a223f7a9",
-      "destination_sha256": "b12f09897e00fb83b321aba9b320a83c5e85c1f91e780eb204c7a160a223f7a9",
+      "source_sha256": "7598e6b631547a0b644cd65ce9fb3c75c18d0db20a991792969a3215f8483a5b",
+      "destination_sha256": "7598e6b631547a0b644cd65ce9fb3c75c18d0db20a991792969a3215f8483a5b",
       "unchanged": true
     },
     {
       "path": "examples/soren-motion-v7/README.md",
       "source_sha256": "b9aff26863fa5cf44ff52d79ea5d740cee548e594aadd71aebfbde8a9e4bf706",
-      "destination_sha256": "8e27ab6e9da6616768217371b38a93d4f68a91cf43502c91273a46108bac091d",
+      "destination_sha256": "9415a469edff20330d6b940a6eff1c48e5c9bdbfb62c73c0f3116cffcc364b58",
       "unchanged": false
     },
     {
@@ -600,14 +600,14 @@
     },
     {
       "path": "examples/soren-motion-v7/section-motion/.gitignore",
-      "source_sha256": "79e2f8c581bb06e2b6e33f9e579201fd112d12beb1b8813ce0aaecb766e4f9ba",
-      "destination_sha256": "79e2f8c581bb06e2b6e33f9e579201fd112d12beb1b8813ce0aaecb766e4f9ba",
+      "source_sha256": "aec949d1fbf80687da7f6059290d2f7d0515f759903f774075f7957ca71667da",
+      "destination_sha256": "aec949d1fbf80687da7f6059290d2f7d0515f759903f774075f7957ca71667da",
       "unchanged": true
     },
     {
       "path": "examples/soren-motion-v7/section-motion/.prettierrc",
-      "source_sha256": "e8dae064695ae349a6c12b7b38ed709940aed6239762246dd0895f8a3d365d4d",
-      "destination_sha256": "e8dae064695ae349a6c12b7b38ed709940aed6239762246dd0895f8a3d365d4d",
+      "source_sha256": "10e86224d2f90945fbe57db21ac109bdb0ce9b5d7470e7b78fa5f8b6d49a1afd",
+      "destination_sha256": "10e86224d2f90945fbe57db21ac109bdb0ce9b5d7470e7b78fa5f8b6d49a1afd",
       "unchanged": true
     },
     {
@@ -714,8 +714,8 @@
     },
     {
       "path": "examples/soren-motion-v8/.gitignore",
-      "source_sha256": "663a87529d192abf68c2c8825f48796d0a872eaaea408b477a40b8b514ae61c9",
-      "destination_sha256": "663a87529d192abf68c2c8825f48796d0a872eaaea408b477a40b8b514ae61c9",
+      "source_sha256": "6f8485dabce89631cfbc8bede88fca6e2018268c3858a9762ef1f10d35fa6da6",
+      "destination_sha256": "6f8485dabce89631cfbc8bede88fca6e2018268c3858a9762ef1f10d35fa6da6",
       "unchanged": true
     },
     {
@@ -727,7 +727,7 @@
     {
       "path": "examples/soren-motion-v8/README.md",
       "source_sha256": "9e52d997818240e17687bc8b6493cf829fa058195f4c08490581df6690598407",
-      "destination_sha256": "acf3a35cecbeee3b68e089dee766fce7fc474903cb81fb3a11c760c271240893",
+      "destination_sha256": "daf18712cee202d3155a229352e9d74a956317aa30720c5936be41747dd66c74",
       "unchanged": false
     },
     {
@@ -750,32 +750,32 @@
     },
     {
       "path": "examples/soren-motion-v8/docs/licenses/cult-ui.txt",
-      "source_sha256": "287f0565a41ca73e4cb32be9c28de5da3d89af48ad1f17dc790d0594457b1412",
-      "destination_sha256": "287f0565a41ca73e4cb32be9c28de5da3d89af48ad1f17dc790d0594457b1412",
+      "source_sha256": "78045e58dfd5f039ad350ad293da2ad9a2c0362b82dadb069b1c10be382ddac7",
+      "destination_sha256": "78045e58dfd5f039ad350ad293da2ad9a2c0362b82dadb069b1c10be382ddac7",
       "unchanged": true
     },
     {
       "path": "examples/soren-motion-v8/docs/licenses/fancy-components.txt",
-      "source_sha256": "3616eaf37e149cf557194c2fa9eb036014900b8a1147897faf741e697aa744ea",
-      "destination_sha256": "3616eaf37e149cf557194c2fa9eb036014900b8a1147897faf741e697aa744ea",
+      "source_sha256": "39b0d9c112b4e80383da88660cbaa64972f741e80205c14fa1b779ff1989cc09",
+      "destination_sha256": "39b0d9c112b4e80383da88660cbaa64972f741e80205c14fa1b779ff1989cc09",
       "unchanged": true
     },
     {
       "path": "examples/soren-motion-v8/docs/licenses/kokonut-ui.txt",
-      "source_sha256": "5711e66cc286e26956ed574d0f2852d6e9601e4694b279cc490175e40f04677f",
-      "destination_sha256": "5711e66cc286e26956ed574d0f2852d6e9601e4694b279cc490175e40f04677f",
+      "source_sha256": "b2e018ad1fd564608cc1ee0c2ad675ce5202c8ed9f5f68e6d09e7b6bc881d5d2",
+      "destination_sha256": "b2e018ad1fd564608cc1ee0c2ad675ce5202c8ed9f5f68e6d09e7b6bc881d5d2",
       "unchanged": true
     },
     {
       "path": "examples/soren-motion-v8/docs/licenses/magic-ui.txt",
-      "source_sha256": "febb5c300211a63c50230f18f3d48bfb70105ac9d4350be88ed713c6382f4e90",
-      "destination_sha256": "febb5c300211a63c50230f18f3d48bfb70105ac9d4350be88ed713c6382f4e90",
+      "source_sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba",
+      "destination_sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba",
       "unchanged": true
     },
     {
       "path": "examples/soren-motion-v8/docs/licenses/motion-primitives.txt",
-      "source_sha256": "8ca1a5ee043f211ca4ab5a1e0533c837f986de340cde2f1f27c0b8b5961ee7d2",
-      "destination_sha256": "8ca1a5ee043f211ca4ab5a1e0533c837f986de340cde2f1f27c0b8b5961ee7d2",
+      "source_sha256": "f668f5ef3635eb906f10b1eea9a32e449eb6e1a183ab6879ef6d56c0980dd2f3",
+      "destination_sha256": "f668f5ef3635eb906f10b1eea9a32e449eb6e1a183ab6879ef6d56c0980dd2f3",
       "unchanged": true
     },
     {
@@ -786,8 +786,8 @@
     },
     {
       "path": "examples/soren-motion-v8/index.html",
-      "source_sha256": "f8ee300d2bc2b59760ec75b2359a1050bf031b16e18fe33c2d8ac9e1e087b379",
-      "destination_sha256": "f8ee300d2bc2b59760ec75b2359a1050bf031b16e18fe33c2d8ac9e1e087b379",
+      "source_sha256": "489d0e469049dbe0c1d50b016c11663bd1e4a49732db7df4e7aa0dc334eae2d9",
+      "destination_sha256": "489d0e469049dbe0c1d50b016c11663bd1e4a49732db7df4e7aa0dc334eae2d9",
       "unchanged": true
     },
     {
@@ -804,8 +804,8 @@
     },
     {
       "path": "examples/soren-motion-v8/public/THIRD-PARTY-NOTICES.txt",
-      "source_sha256": "a47e373fb195fe300ed7bb12ce360d6783e5d414f2c91587c6fca8b628e65334",
-      "destination_sha256": "a47e373fb195fe300ed7bb12ce360d6783e5d414f2c91587c6fca8b628e65334",
+      "source_sha256": "158aee0fd35448b63a03daa55bd2c418a838c279b6725320057e09d8f9c1dfbb",
+      "destination_sha256": "158aee0fd35448b63a03daa55bd2c418a838c279b6725320057e09d8f9c1dfbb",
       "unchanged": true
     },
     {
@@ -996,14 +996,14 @@
     },
     {
       "path": "examples/soren-motion-v8/src/resume/explorers.css",
-      "source_sha256": "c2a534f088de46149c793ca3b8cc44acbe1dd8a37202963fe6e213e2e35dfe12",
-      "destination_sha256": "c2a534f088de46149c793ca3b8cc44acbe1dd8a37202963fe6e213e2e35dfe12",
+      "source_sha256": "e7d3153b628f7cdefc7763da8ed9082881927e7da1bb9932fbb7bcf0b0f69293",
+      "destination_sha256": "e7d3153b628f7cdefc7763da8ed9082881927e7da1bb9932fbb7bcf0b0f69293",
       "unchanged": true
     },
     {
       "path": "examples/soren-motion-v8/src/resume/legacy.css",
-      "source_sha256": "86e2ba2dc726888d944b5942c75f14880a5ff6b6348ec3ac03b2b5a149b49c1f",
-      "destination_sha256": "86e2ba2dc726888d944b5942c75f14880a5ff6b6348ec3ac03b2b5a149b49c1f",
+      "source_sha256": "28faf876848ef70d7a011189d7d64045cf9d2064c6fab740e863d6b74004b812",
+      "destination_sha256": "28faf876848ef70d7a011189d7d64045cf9d2064c6fab740e863d6b74004b812",
       "unchanged": true
     },
     {
@@ -1068,8 +1068,8 @@
     },
     {
       "path": "examples/soren-motion-v8/src/resume/projects/biomechanical-lab/tokens.css",
-      "source_sha256": "efcbd4c7f989ecbc03e23e6d7f8e2d27499bbf0dc62ec360dc3de314064029dd",
-      "destination_sha256": "efcbd4c7f989ecbc03e23e6d7f8e2d27499bbf0dc62ec360dc3de314064029dd",
+      "source_sha256": "dcbfd18b09a4d0babcac42d17d1b7b26c7143e4264a613398b1d95e2128e0b9e",
+      "destination_sha256": "dcbfd18b09a4d0babcac42d17d1b7b26c7143e4264a613398b1d95e2128e0b9e",
       "unchanged": true
     },
     {
@@ -1146,8 +1146,8 @@
     },
     {
       "path": "motion-source/biomechanical-hero/index.html",
-      "source_sha256": "8154ac0b0474e25a63e6b23b8df2e2b96e5f37b46587a6c4e88e94c839cc20eb",
-      "destination_sha256": "8154ac0b0474e25a63e6b23b8df2e2b96e5f37b46587a6c4e88e94c839cc20eb",
+      "source_sha256": "d39d9a1fe752960d61631edd7f18b289a741013bf80dcb87917044fcb613c495",
+      "destination_sha256": "d39d9a1fe752960d61631edd7f18b289a741013bf80dcb87917044fcb613c495",
       "unchanged": true
     },
     {
@@ -1189,7 +1189,7 @@
     {
       "path": "package_distribution.py",
       "source_sha256": "9d598ef45b2cea73fd2090892136f2c7aceca0b5acf9d4e452c9fbaf3ec1a943",
-      "destination_sha256": "74d584c4e07576a101f1bc4bb743980e0b8d8e40df0825e567875c0ea49fedff",
+      "destination_sha256": "cf95e4d199f42adca869f11b19e8112f467d826e3dbcea04560b5a361449deb3",
       "unchanged": false
     },
     {
@@ -1258,5 +1258,6 @@
       "destination_sha256": "7d35c0dbf8096f6d37d35a2215867b922eb3c54fa56f263b05c2124fee95aa30",
       "unchanged": true
     }
-  ]
+  ],
+  "hash_basis": "Canonical Git blob bytes, independent of working-tree CRLF conversion"
 }

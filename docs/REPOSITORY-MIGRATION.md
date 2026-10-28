@@ -8,7 +8,7 @@ The source was `sorensadrgit-art/phnoe-web-app`, branch `feat/soren-section-expl
 
 Retained all portfolio versions under `examples/`, the related `motion-source/`, artwork in `artifacts/`, design/attribution documents, portfolio-only JavaScript checks, and artwork-generation helpers. Removed the photo application's capture, processing, service, viewer, Python test, and operational files from the destination working tree.
 
-`portfolio-file-manifest.json` records the original and destination SHA-256 for every retained source file. 204 of 209 retained files are byte-identical. Intentional changes are limited to version README links, portable packaging paths, and the checksum generated from the current build. The root README and ignore rules now describe the dedicated portfolio repository.
+`portfolio-file-manifest.json` records the original and destination SHA-256 of canonical Git blob bytes for every retained source file, independent of working-tree CRLF conversion. 204 of 209 retained files are byte-identical. Intentional changes are limited to version README links, portable packaging paths, and the checksum generated from the current build. The root README and ignore rules now describe the dedicated portfolio repository.
 
 No Git history was rewritten. Earlier branches and commits may still contain the old mixed repository layout.
 
