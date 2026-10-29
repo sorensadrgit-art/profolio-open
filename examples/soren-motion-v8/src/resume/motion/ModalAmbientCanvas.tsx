@@ -90,12 +90,31 @@ export function ModalAmbientCanvas({ accentColor = '#00f5a0', reduced = false }:
     let lastTime = performance.now();
     const render = (time: number) => {
       if (!alive || !renderer) return;
+      if (document.hidden) {
+        animId = requestAnimationFrame(render);
+        return;
+      }
       const dt = (time - lastTime) * 0.001;
       lastTime = time;
       uniformsRef.current.uTime.value += Math.min(dt, 0.1);
       renderer.render(scene, camera);
       animId = requestAnimationFrame(render);
     };
+
+    const onContextLost = (e: Event) => {
+      e.preventDefault();
+      cancelAnimationFrame(animId);
+    };
+
+    const onContextRestored = () => {
+      if (!alive || !renderer) return;
+      onResize();
+      lastTime = performance.now();
+      animId = requestAnimationFrame(render);
+    };
+
+    canvas.addEventListener('webglcontextlost', onContextLost);
+    canvas.addEventListener('webglcontextrestored', onContextRestored);
 
     animId = requestAnimationFrame(render);
 
@@ -104,6 +123,8 @@ export function ModalAmbientCanvas({ accentColor = '#00f5a0', reduced = false }:
       cancelAnimationFrame(animId);
       window.removeEventListener('resize', onResize);
       window.removeEventListener('mousemove', onMouseMove);
+      canvas.removeEventListener('webglcontextlost', onContextLost);
+      canvas.removeEventListener('webglcontextrestored', onContextRestored);
       geometry.dispose();
       material.dispose();
       renderer?.dispose();
