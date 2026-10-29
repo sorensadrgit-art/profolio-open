@@ -4,7 +4,7 @@ import { useInertialTrack } from './useInertialTrack';
 import type { ResumeRibbonScene } from './ResumeRibbonScene';
 import { carouselPositions, getSectionIndexFromHash, resumeSections, stepIndex } from './resumeData';
 import { luxuryTokens, sectionAccents } from './luxuryTokens';
-import {SectionExplorer} from './SectionExplorer';
+import {ResumeFolderExplorer} from './folder-archive/ResumeFolderExplorer';
 import {flightEase} from './reference-motion.mjs';
 import './legacy.css';
 import './explorers.css';
@@ -257,7 +257,7 @@ export function ResumeExperience() {
       }
       if (indexOpen || profileOpen) return;
       if (event.target instanceof HTMLInputElement || event.target instanceof HTMLTextAreaElement) return;
-      if (event.target instanceof HTMLElement && event.target.closest('[role="tablist"], select, [role="slider"], [data-local-keys]' )) return;
+      if (event.target instanceof HTMLElement && event.target.closest('[role="tablist"], select, [role="slider"], [data-local-keys], .folder-root, .magic-bento' )) return;
       if (event.key === 'ArrowRight' && !event.altKey && !event.ctrlKey) {
         event.preventDefault();
         if (openId) openSection(stepIndex(focusedIndex, 1, count));
@@ -511,7 +511,16 @@ export function ResumeExperience() {
           <section ref={detailRef} className={'sr-detail sr-explorer'} role="dialog" aria-modal="true"
             aria-label={activeSection.title} tabIndex={-1} data-open-section={activeSection.id}>
             <button type="button" className="sr-detail-close" onClick={closePanels} aria-label="Close section">×</button>
-            <SectionExplorer key={activeSection.id} section={activeSection} reduced={reduced} initialProject={initialProject} onNavigate={(id,project)=>openSection(resumeSections.findIndex(s=>s.id===id),project)}/>
+            <ResumeFolderExplorer
+              key={activeSection.id}
+              section={activeSection}
+              reduced={reduced}
+              initialProject={initialProject}
+              onNavigate={(id, project) => openSection(resumeSections.findIndex(s => s.id === id), project)}
+              onClose={closePanels}
+              onPrevSection={() => openSection(stepIndex(focusedIndex, -1, count))}
+              onNextSection={() => openSection(stepIndex(focusedIndex, 1, count))}
+            />
             <nav className="sr-section-nav" aria-label="Section navigation">
               <button type="button" aria-label="Previous section" onClick={()=>openSection(stepIndex(focusedIndex,-1,count))}>← Previous</button>
               <button type="button" aria-label="Back to gallery" onClick={closePanels}>Back to gallery</button>

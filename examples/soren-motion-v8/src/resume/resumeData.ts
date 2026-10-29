@@ -36,7 +36,7 @@ export const resumeSections: ResumeSection[] = [
     title: 'ABOUT ME',
     summary: 'Movement science meets creative engineering.',
     lead: 'Exploring the intersection of human movement, intelligent systems, and immersive digital design.',
-    image: import.meta.env.BASE_URL + 'media/about-poster.png',
+    image: (import.meta.env?.BASE_URL ?? '/') + 'media/about-poster.png',
     imageFocus: 'center',
     blocks: [
       {
@@ -63,7 +63,7 @@ export const resumeSections: ResumeSection[] = [
     title: 'EXPERIENCE',
     summary: 'Education, service, design, and exploration.',
     lead: 'A multidisciplinary background spanning physical therapy education, technology, and hands-on prototyping.',
-    image: import.meta.env.BASE_URL + 'media/experience-poster.png',
+    image: (import.meta.env?.BASE_URL ?? '/') + 'media/experience-poster.png',
     imageFocus: 'center',
     blocks: [
       {
@@ -90,7 +90,7 @@ export const resumeSections: ResumeSection[] = [
     title: 'EDUCATION',
     summary: 'Learning to understand movement.',
     lead: 'Clinical foundations and creative technology inform how I approach complex problems.',
-    image: import.meta.env.BASE_URL + 'media/education-poster.png',
+    image: (import.meta.env?.BASE_URL ?? '/') + 'media/education-poster.png',
     imageFocus: 'center',
     blocks: [
       {
@@ -117,7 +117,7 @@ export const resumeSections: ResumeSection[] = [
     title: 'PROJECTS',
     summary: 'Movement, code, and experiments.',
     lead: 'Selected technical explorations, from camera-based motion analysis to intelligent creative tools.',
-    image: import.meta.env.BASE_URL + 'media/projects-poster.png',
+    image: (import.meta.env?.BASE_URL ?? '/') + 'media/projects-poster.png',
     imageFocus: 'center',
     blocks: [
       {
@@ -149,7 +149,7 @@ export const resumeSections: ResumeSection[] = [
     title: 'SKILLS',
     summary: 'Design, engineering, and movement.',
     lead: 'A cross-disciplinary toolkit for creating thoughtful, technically ambitious experiences.',
-    image: import.meta.env.BASE_URL + 'media/skills-poster.png',
+    image: (import.meta.env?.BASE_URL ?? '/') + 'media/skills-poster.png',
     imageFocus: 'center',
     blocks: [
       {
@@ -176,7 +176,7 @@ export const resumeSections: ResumeSection[] = [
     title: 'CONTACT',
     summary: 'Explore the work. Start a conversation.',
     lead: 'Interested in human movement, creative engineering, and what we can build at their intersection?',
-    image: import.meta.env.BASE_URL + 'media/contact-poster.png',
+    image: (import.meta.env?.BASE_URL ?? '/') + 'media/contact-poster.png',
     imageFocus: 'center',
     blocks: [
       {
