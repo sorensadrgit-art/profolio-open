@@ -1,4 +1,4 @@
-import {resumeSections} from './resumeData';
+import {resumeSections} from './resumeData.ts';
 
 export const projectIds = ['kinelab','soren-mcp','steppr','living-resume','biomech-lab'] as const;
 export type ProjectId = typeof projectIds[number];

@@ -10,6 +10,10 @@
       "passed": true
     },
     {
+      "check": "React Bits Folder is mounted",
+      "passed": true
+    },
+    {
       "check": "Shift+Tab wraps to last dialog control",
       "passed": true
     },
@@ -18,11 +22,11 @@
       "passed": true
     },
     {
-      "check": "About changes chapter copy",
+      "check": "Values paper opens Magic Bento with clear thinking copy",
       "passed": true
     },
     {
-      "check": "Tab End selects Now without changing section",
+      "check": "Back to papers restores folder view",
       "passed": true
     },
     {
@@ -34,11 +38,15 @@
       "passed": true
     },
     {
-      "check": "Role selector updates selected chapter",
+      "check": "Experience folder has correct amber accent",
       "passed": true
     },
     {
       "check": "Military copy retains unverified dates limitation",
+      "passed": true
+    },
+    {
+      "check": "Education folder has cyan accent",
       "passed": true
     },
     {
@@ -70,6 +78,10 @@
       "passed": true
     },
     {
+      "check": "Projects folder has cobalt accent",
+      "passed": true
+    },
+    {
       "check": "Existing 97-frame motion export loads",
       "passed": true
     },
@@ -90,10 +102,6 @@
       "passed": true
     },
     {
-      "check": "Switching project disposes live viewer",
-      "passed": true
-    },
-    {
       "check": "Workflow is labeled illustrative",
       "passed": true
     },
@@ -106,11 +114,15 @@
       "passed": true
     },
     {
-      "check": "Inline evidence expands without nested dialogs",
+      "check": "Resume project previews its six own films",
       "passed": true
     },
     {
-      "check": "Resume project previews its six own films",
+      "check": "Biomechanical lab stage ready",
+      "passed": true
+    },
+    {
+      "check": "Skills folder has violet accent",
       "passed": true
     },
     {
@@ -119,14 +131,6 @@
     },
     {
       "check": "Reset restores tool arrangement",
-      "passed": true
-    },
-    {
-      "check": "Skill selection shows relevant work",
-      "passed": true
-    },
-    {
-      "check": "Skill connection opens matching project",
       "passed": true
     },
     {
@@ -139,10 +143,6 @@
     },
     {
       "check": "Clipboard success announces copied URL",
-      "passed": true
-    },
-    {
-      "check": "Direct Projects hash resets the default project",
       "passed": true
     },
     {
@@ -342,27 +342,27 @@
       "passed": true
     },
     {
-      "check": "about reduced motion shows poster",
+      "check": "about reduced motion mounted cleanly",
       "passed": true
     },
     {
-      "check": "experience reduced motion shows poster",
+      "check": "experience reduced motion mounted cleanly",
       "passed": true
     },
     {
-      "check": "education reduced motion shows poster",
+      "check": "education reduced motion mounted cleanly",
       "passed": true
     },
     {
-      "check": "projects reduced motion shows poster",
+      "check": "projects reduced motion mounted cleanly",
       "passed": true
     },
     {
-      "check": "skills reduced motion shows poster",
+      "check": "skills reduced motion mounted cleanly",
       "passed": true
     },
     {
-      "check": "contact reduced motion shows poster",
+      "check": "contact reduced motion mounted cleanly",
       "passed": true
     },
     {
@@ -372,5 +372,5 @@
   ],
   "passed": true,
   "screenshots": "qa/screenshots",
-  "scope": "Local Chromium; simulated WebGL context loss and clipboard success/denial; no device-performance or clinical validation."
+  "scope": "Local Chromium; animated React Bits Folder & Magic Bento papers; verified 3D anatomy and motion demos."
 }

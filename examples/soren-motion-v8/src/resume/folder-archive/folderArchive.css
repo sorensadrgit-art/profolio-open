@@ -1,0 +1,1139 @@
+/* ==========================================================================
+   SOREN Living Résumé — Folder Archive & Magic Bento Papers Styles
+   ========================================================================== */
+
+.rf-archive-root {
+  position: relative;
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at 50% 25%, #10141d 0%, #07090e 75%, #040507 100%);
+  color: #f5f6fa;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 1.5rem 2rem;
+  z-index: 10;
+}
+
+/* --------------------------------------------------------------------------
+   Archive Header
+   -------------------------------------------------------------------------- */
+
+.rf-archive-header {
+  flex-shrink: 0;
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.rf-header-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rf-section-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--rf-accent, #00f5a0);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.rf-section-caption {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: #8892b0;
+  text-transform: uppercase;
+}
+
+.rf-header-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.rf-archive-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 0;
+  color: #ffffff;
+}
+
+.rf-gallery-return-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #f1f2f6;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 44px;
+}
+
+.rf-gallery-return-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--rf-accent, #00f5a0);
+  transform: translateY(-1px);
+}
+
+.rf-gallery-return-btn:focus-visible {
+  outline: 2px solid var(--rf-accent, #00f5a0);
+  outline-offset: 2px;
+}
+
+.rf-archive-lead {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #a4b0be;
+  max-width: 720px;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Interactive Stage & Folder Mount
+   -------------------------------------------------------------------------- */
+
+.rf-archive-stage {
+  position: relative;
+  flex: 1 1 auto;
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.rf-folder-viewport {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.rf-folder-viewport.is-dimmed {
+  opacity: 0.12;
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+.rf-folder-mount {
+  position: relative;
+  width: 100%;
+  height: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.rf-folder-hint {
+  margin-top: 1.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: #718093;
+  letter-spacing: 0.08em;
+  text-align: center;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   Tactile Porcelain Paper Sheets (Inside Folder)
+   -------------------------------------------------------------------------- */
+
+.rf-paper-sheet {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #fdfdfd;
+  color: #1a1e24;
+  border-radius: calc(7px * var(--folder-scale, 1));
+  padding: calc(10px * var(--folder-scale, 1)) calc(11px * var(--folder-scale, 1));
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  user-select: none;
+  text-align: left;
+  overflow: hidden;
+}
+
+.rf-paper-sheet:focus-visible {
+  outline: 2px solid var(--rf-accent, #00f5a0);
+  outline-offset: 2px;
+}
+
+.rf-paper-sheet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: calc(4px * var(--folder-scale, 1));
+}
+
+.rf-paper-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: calc(8px * var(--folder-scale, 1));
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #747d8c;
+  background: rgba(0, 0, 0, 0.05);
+  padding: calc(2px * var(--folder-scale, 1)) calc(4px * var(--folder-scale, 1));
+  border-radius: 3px;
+}
+
+.rf-paper-dot {
+  width: calc(6px * var(--folder-scale, 1));
+  height: calc(6px * var(--folder-scale, 1));
+  border-radius: 50%;
+  box-shadow: 0 0 5px var(--rf-accent, #00f5a0);
+}
+
+.rf-paper-heading {
+  font-family: 'Syne', sans-serif;
+  font-size: calc(11px * var(--folder-scale, 1));
+  font-weight: 700;
+  color: #0c1015;
+  margin: 0 0 calc(2px * var(--folder-scale, 1)) 0;
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rf-paper-subtitle-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: calc(8.5px * var(--folder-scale, 1));
+  font-weight: 600;
+  color: #57606f;
+  margin: 0 0 calc(4px * var(--folder-scale, 1)) 0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rf-paper-excerpt-box {
+  flex: 1 1 auto;
+  overflow: hidden;
+  margin-bottom: calc(4px * var(--folder-scale, 1));
+}
+
+.rf-paper-excerpt {
+  font-size: calc(8px * var(--folder-scale, 1));
+  line-height: 1.3;
+  color: #2f3542;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.rf-paper-lines {
+  display: flex;
+  flex-direction: column;
+  gap: calc(2.5px * var(--folder-scale, 1));
+  margin: calc(3px * var(--folder-scale, 1)) 0;
+}
+
+.rf-paper-rule {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.09);
+  border-radius: 1px;
+}
+
+.rf-paper-sheet-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: calc(3px * var(--folder-scale, 1));
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.rf-paper-cta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: calc(7.5px * var(--folder-scale, 1));
+  font-weight: 600;
+  color: #10ac84;
+  letter-spacing: 0.04em;
+}
+
+.rf-paper-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: calc(8px * var(--folder-scale, 1));
+  font-weight: 700;
+  color: #a4b0be;
+}
+
+/* --------------------------------------------------------------------------
+   Paper Detail MagicBento Reading Overlay
+   -------------------------------------------------------------------------- */
+
+.rf-detail-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background: rgba(8, 10, 15, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 50;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: rfFadeSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes rfFadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.rf-paper-detail-canvas {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 1.5rem 2rem 2rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.rf-paper-detail-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 1.25rem;
+}
+
+.rf-paper-header-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.rf-back-button {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #f1f2f6;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  min-height: 44px;
+}
+
+.rf-back-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--rf-accent, #00f5a0);
+  transform: translateX(-2px);
+}
+
+.rf-back-button:focus-visible {
+  outline: 2px solid var(--rf-accent, #00f5a0);
+  outline-offset: 2px;
+}
+
+.rf-paper-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: #8892b0;
+}
+
+.rf-crumb-root {
+  color: #a4b0be;
+}
+
+.rf-crumb-sep {
+  color: #57606f;
+}
+
+.rf-crumb-doc {
+  color: var(--rf-accent, #00f5a0);
+  font-weight: 700;
+}
+
+.rf-paper-header-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.rf-paper-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--rf-accent, #00f5a0);
+  text-transform: uppercase;
+}
+
+.rf-paper-main-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0;
+  color: #ffffff;
+}
+
+.rf-paper-subtitle {
+  font-size: 1.05rem;
+  color: #a4b0be;
+  margin: 0;
+}
+
+.rf-paper-bento-stage {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   Bento Custom Content Cards
+   -------------------------------------------------------------------------- */
+
+.rf-bento-editorial,
+.rf-bento-callout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.rf-bento-kicker {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--rf-accent, #00f5a0);
+  text-transform: uppercase;
+}
+
+.rf-bento-heading {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.rf-bento-body {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #c8d6e5;
+  margin: 0;
+}
+
+.rf-bento-film-card {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.rf-bento-film-card .ex-film-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.rf-bento-film-card video,
+.rf-bento-film-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --------------------------------------------------------------------------
+   Specialized Interactive Modules
+   -------------------------------------------------------------------------- */
+
+.rf-visual-anatomy,
+.rf-visual-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.rf-visual-stage,
+.rf-demo-stage {
+  position: relative;
+  width: 100%;
+  min-height: 260px;
+  background: #06090e;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rf-hud-overlay {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--rf-accent, #00f5a0);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.rf-stage-stamp {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  color: #a4b0be;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.rf-stage-stamp strong {
+  font-size: 0.85rem;
+  color: #ffffff;
+}
+
+.rf-stage-caption {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  color: #747d8c;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.rf-explore-button {
+  background: var(--rf-accent, #00f5a0);
+  color: #070a0e;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  z-index: 10;
+  min-height: 44px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  transition: transform 0.15s, opacity 0.15s;
+}
+
+.rf-explore-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+.rf-explore-button:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.rf-demo-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: #ff9f43;
+}
+
+.rf-anatomy-controls,
+.rf-demo-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.rf-slider-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.rf-slider-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  color: #a4b0be;
+}
+
+.rf-slider-label output {
+  font-family: 'JetBrains Mono', monospace;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.rf-slider-label input[type='range'] {
+  accent-color: var(--rf-accent, #00f5a0);
+  cursor: pointer;
+  min-height: 28px;
+}
+
+.rf-control-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.rf-btn-sm {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #f1f2f6;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  min-height: 36px;
+  transition: background 0.15s;
+}
+
+.rf-btn-sm:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.rf-btn-sm[aria-pressed='true'] {
+  background: var(--rf-accent, #00f5a0);
+  color: #070a0e;
+  font-weight: 700;
+}
+
+.rf-btn-sm:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.rf-btn-sm:focus-visible {
+  outline: 2px solid var(--rf-accent, #00f5a0);
+  outline-offset: 2px;
+}
+
+.rf-status-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: #747d8c;
+}
+
+/* System Study Workflow */
+.rf-system-study {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.rf-system-chain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.rf-chain-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #a4b0be;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  min-height: 38px;
+}
+
+.rf-chain-btn.is-active {
+  background: rgba(56, 103, 214, 0.25);
+  border-color: #3867d6;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.rf-system-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 0.85rem;
+}
+
+.rf-system-desc {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #dfe4ea;
+  margin: 0;
+}
+
+/* Steppr Study */
+.rf-steppr-study {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.rf-steppr-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rf-light-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  cursor: pointer;
+  min-height: 36px;
+}
+
+.rf-switch-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffa502;
+}
+
+.rf-steppr-study.is-night .rf-switch-indicator {
+  background: #70a1ff;
+  box-shadow: 0 0 8px #70a1ff;
+}
+
+.rf-steppr-desc {
+  font-size: 0.88rem;
+  color: #c8d6e5;
+  margin: 0;
+}
+
+.rf-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--rf-accent, #3867d6);
+  color: #ffffff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  min-height: 40px;
+}
+
+/* Resume Study */
+.rf-resume-study {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.rf-resume-film-holder {
+  width: 100%;
+  height: 240px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000000;
+}
+
+.rf-resume-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.rf-tag-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #a4b0be;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  min-height: 34px;
+  text-transform: capitalize;
+}
+
+.rf-tag-btn.is-active {
+  background: rgba(56, 103, 214, 0.28);
+  border-color: #3867d6;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Biomechanical Lab */
+.rf-biomech-stage {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #040609;
+  border: 1px solid rgba(56, 103, 214, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Skills Workbench */
+.rf-skills-workbench {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.rf-tool-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.rf-tool-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f1f2f6;
+  padding: 0.6rem;
+  border-radius: 6px;
+  text-align: left;
+  cursor: grab;
+  min-height: 60px;
+}
+
+.rf-tool-card.is-active {
+  border-color: var(--rf-accent, #a55eea);
+  background: rgba(165, 94, 234, 0.15);
+}
+
+.rf-tool-cat {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.58rem;
+  color: #a4b0be;
+  text-transform: uppercase;
+}
+
+.rf-tool-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.88rem;
+  color: #ffffff;
+}
+
+.rf-tool-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.58rem;
+  color: var(--rf-accent, #a55eea);
+  align-self: flex-end;
+}
+
+.rf-workbench-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rf-link-btn {
+  background: none;
+  border: none;
+  color: var(--rf-accent, #a55eea);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0.2rem;
+}
+
+.rf-skill-detail-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.rf-kicker {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--rf-accent, #a55eea);
+  letter-spacing: 0.08em;
+}
+
+.rf-skill-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.rf-skill-note {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #c8d6e5;
+  margin: 0;
+}
+
+.rf-connected-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.3rem;
+}
+
+.rf-proj-chip {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  min-height: 32px;
+}
+
+/* Copy Link Module */
+.rf-copy-module {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rf-copy-direct {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--rf-accent, #00f5a0);
+  word-break: break-all;
+}
+
+/* --------------------------------------------------------------------------
+   Archive Footer
+   -------------------------------------------------------------------------- */
+
+.rf-archive-footer {
+  flex-shrink: 0;
+  max-width: 1320px;
+  width: 100%;
+  margin: 1.5rem auto 0 auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rf-footer-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: #747d8c;
+}
+
+.rf-footer-dot {
+  color: #57606f;
+}
+
+.rf-footer-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.rf-nav-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #dcdde1;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  min-height: 36px;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.rf-nav-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.rf-nav-btn:focus-visible {
+  outline: 2px solid var(--rf-accent, #00f5a0);
+  outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Rules
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+  .rf-archive-root {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .rf-tool-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .rf-archive-root {
+    padding: 1rem;
+  }
+
+  .rf-archive-header {
+    gap: 0.6rem;
+  }
+
+  .rf-header-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .rf-archive-stage {
+    min-height: 440px;
+  }
+
+  .rf-folder-viewport {
+    min-height: 440px;
+  }
+
+  .rf-folder-mount {
+    height: 380px;
+  }
+
+  .rf-paper-detail-canvas {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .rf-archive-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .rf-tool-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .rf-archive-root {
+    padding: 0.85rem 0.65rem;
+  }
+
+  .rf-folder-mount {
+    height: 320px;
+  }
+
+  .rf-archive-stage {
+    min-height: 360px;
+  }
+
+  .rf-folder-viewport {
+    min-height: 360px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Reduced Motion
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .rf-detail-overlay {
+    animation: none;
+  }
+
+  .rf-folder-viewport {
+    transition: none;
+  }
+
+  .rf-gallery-return-btn,
+  .rf-back-button,
+  .rf-nav-btn,
+  .rf-paper-sheet {
+    transition: none;
+  }
+}
